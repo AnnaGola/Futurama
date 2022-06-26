@@ -12,6 +12,8 @@ import CoreLocation
 final class MainHeader: UIView {
 
     let locationManager = CLLocationManager()
+    let networkService = FetchDataService()
+    //let weatherModel: Model?
     
     private let locationNameLabel: UILabel = {
         let label = UILabel()
@@ -68,7 +70,6 @@ final class MainHeader: UIView {
         return label
     }()
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(locationNameLabel)
@@ -79,6 +80,7 @@ final class MainHeader: UIView {
         addConstraints()
         setupLocationManager()
     }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

@@ -16,6 +16,9 @@
 		AF168CDA2868C88100B43E80 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CD92868C88100B43E80 /* WeatherAPI.swift */; };
 		AF168CDC2868C90D00B43E80 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CDB2868C90D00B43E80 /* Model.swift */; };
 		AF168CDE2868C9E300B43E80 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CDD2868C9E300B43E80 /* FetchData.swift */; };
+		AF168CE02868CB6800B43E80 /* FetchDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CDF2868CB6800B43E80 /* FetchDataService.swift */; };
+		AF168CE22868CC5B00B43E80 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CE12868CC5B00B43E80 /* APIManager.swift */; };
+		AF168CE42868CE2E00B43E80 /* MainHeader+LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CE32868CE2E00B43E80 /* MainHeader+LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		AF168CD92868C88100B43E80 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		AF168CDB2868C90D00B43E80 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AF168CDD2868C9E300B43E80 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
+		AF168CDF2868CB6800B43E80 /* FetchDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDataService.swift; sourceTree = "<group>"; };
+		AF168CE12868CC5B00B43E80 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		AF168CE32868CE2E00B43E80 /* MainHeader+LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainHeader+LocationManager.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +68,13 @@
 		AF168CB92868BC5000B43E80 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				AF168CD42868BD8100B43E80 /* Supporting files */,
-				AF168CD32868BD7600B43E80 /* Extensions */,
-				AF168CD22868BD6C00B43E80 /* View */,
 				AF168CD12868BD6400B43E80 /* Model */,
-				AF168CD02868BD5200B43E80 /* NetworkService */,
-				AF168CCF2868BD4600B43E80 /* App */,
+				AF168CD22868BD6C00B43E80 /* View */,
 				AF168CCE2868BD3700B43E80 /* Controller */,
+				AF168CD02868BD5200B43E80 /* NetworkService */,
+				AF168CD32868BD7600B43E80 /* Extensions */,
+				AF168CCF2868BD4600B43E80 /* App */,
+				AF168CD42868BD8100B43E80 /* Supporting files */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -94,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				AF168CDD2868C9E300B43E80 /* FetchData.swift */,
+				AF168CDF2868CB6800B43E80 /* FetchDataService.swift */,
+				AF168CE12868CC5B00B43E80 /* APIManager.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -118,6 +126,7 @@
 		AF168CD32868BD7600B43E80 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AF168CE32868CE2E00B43E80 /* MainHeader+LocationManager.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,12 +211,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF168CE42868CE2E00B43E80 /* MainHeader+LocationManager.swift in Sources */,
 				AF168CBF2868BC5000B43E80 /* ViewController.swift in Sources */,
 				AF168CDE2868C9E300B43E80 /* FetchData.swift in Sources */,
 				AF168CD62868BE6F00B43E80 /* MainHeader.swift in Sources */,
+				AF168CE22868CC5B00B43E80 /* APIManager.swift in Sources */,
 				AF168CDA2868C88100B43E80 /* WeatherAPI.swift in Sources */,
 				AF168CDC2868C90D00B43E80 /* Model.swift in Sources */,
 				AF168CBB2868BC5000B43E80 /* AppDelegate.swift in Sources */,
+				AF168CE02868CB6800B43E80 /* FetchDataService.swift in Sources */,
 				AF168CBD2868BC5000B43E80 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

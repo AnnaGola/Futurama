@@ -122,10 +122,33 @@ final class MainHeader: UIView {
         locationManager.requestWhenInUseAuthorization()
         locationManager.stopUpdatingLocation()
     }
-    
-    
-    
-    
-    
-
 }
+    
+extension MainHeader: CLLocationManagerDelegate {
+        
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else { return }
+        locationManager.stopUpdatingLocation()
+        let latitude = location.coordinate.latitude
+        let longitude = location.coordinate.longitude
+        
+        networkService.fetchWeatherData(latitude: latitude, longitude: longitude) { [weak self] (weather) in
+            guard let self = self,
+                  let weather = weather,
+                  let currentWeather = weather.current.weather.first,
+                  let dailytWeather = weather.daily.first else { return }
+            
+//            self.locationNameLabel.text = weather.timezone.deletingPrefix()
+//            self.currentTempLabel.text = String(format: "%.f", weather.current.temp) + "°"
+//            self.descriptionLabel.text = currentWeather.descriptionWeather.firstCapitalized
+//            self.lowTempLabel.text = "Min: " + String(format: "%.f", dailytWeather.temp.min) + "°"
+//            self.highTempLabel.text = "Max: " + String(format: "%.f", dailytWeather.temp.max) + "°"
+//            self.weatherModel = weather
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Can't get location", error)
+    }
+}
+

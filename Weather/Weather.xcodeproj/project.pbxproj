@@ -18,7 +18,7 @@
 		AF168CDE2868C9E300B43E80 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CDD2868C9E300B43E80 /* FetchData.swift */; };
 		AF168CE02868CB6800B43E80 /* FetchDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CDF2868CB6800B43E80 /* FetchDataService.swift */; };
 		AF168CE22868CC5B00B43E80 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CE12868CC5B00B43E80 /* APIManager.swift */; };
-		AF168CE42868CE2E00B43E80 /* MainHeader+LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CE32868CE2E00B43E80 /* MainHeader+LocationManager.swift */; };
+		AF168CE62868D44F00B43E80 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CE52868D44F00B43E80 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		AF168CDD2868C9E300B43E80 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 		AF168CDF2868CB6800B43E80 /* FetchDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDataService.swift; sourceTree = "<group>"; };
 		AF168CE12868CC5B00B43E80 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		AF168CE32868CE2E00B43E80 /* MainHeader+LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainHeader+LocationManager.swift"; sourceTree = "<group>"; };
+		AF168CE52868D44F00B43E80 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +126,7 @@
 		AF168CD32868BD7600B43E80 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				AF168CE32868CE2E00B43E80 /* MainHeader+LocationManager.swift */,
+				AF168CE52868D44F00B43E80 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -211,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF168CE42868CE2E00B43E80 /* MainHeader+LocationManager.swift in Sources */,
+				AF168CE62868D44F00B43E80 /* UIView.swift in Sources */,
 				AF168CBF2868BC5000B43E80 /* ViewController.swift in Sources */,
 				AF168CDE2868C9E300B43E80 /* FetchData.swift in Sources */,
 				AF168CD62868BE6F00B43E80 /* MainHeader.swift in Sources */,

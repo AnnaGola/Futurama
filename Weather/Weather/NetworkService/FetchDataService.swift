@@ -16,7 +16,7 @@ class FetchDataService {
     func fetchWeatherData(
         latitude: CLLocationDegrees,
         longitude: CLLocationDegrees,
-        complitionHandler: @escaping (WeatherModel?) -> Void) {
+        complitionHandler: @escaping (Model?) -> Void) {
             
             let urlString = APIManager.shared.getWeatherURL(latitude: latitude, longitude: longitude)
             fetchData.fetchData(urlString: urlString, complitionHandler: complitionHandler)

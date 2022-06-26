@@ -19,6 +19,7 @@
 		AF168CE02868CB6800B43E80 /* FetchDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CDF2868CB6800B43E80 /* FetchDataService.swift */; };
 		AF168CE22868CC5B00B43E80 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CE12868CC5B00B43E80 /* APIManager.swift */; };
 		AF168CE62868D44F00B43E80 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CE52868D44F00B43E80 /* UIView.swift */; };
+		AF168CE82868D51700B43E80 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CE72868D51700B43E80 /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		AF168CDF2868CB6800B43E80 /* FetchDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDataService.swift; sourceTree = "<group>"; };
 		AF168CE12868CC5B00B43E80 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		AF168CE52868D44F00B43E80 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		AF168CE72868D51700B43E80 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				AF168CE52868D44F00B43E80 /* UIView.swift */,
+				AF168CE72868D51700B43E80 /* UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				AF168CD62868BE6F00B43E80 /* MainHeader.swift in Sources */,
 				AF168CE22868CC5B00B43E80 /* APIManager.swift in Sources */,
 				AF168CDA2868C88100B43E80 /* WeatherAPI.swift in Sources */,
+				AF168CE82868D51700B43E80 /* UIImageView.swift in Sources */,
 				AF168CDC2868C90D00B43E80 /* Model.swift in Sources */,
 				AF168CBB2868BC5000B43E80 /* AppDelegate.swift in Sources */,
 				AF168CE02868CB6800B43E80 /* FetchDataService.swift in Sources */,

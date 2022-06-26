@@ -11,7 +11,8 @@ import CoreLocation
 
 final class MainHeader: UIView {
 
-  
+    let locationManager = CLLocationManager()
+    
     private let locationNameLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
@@ -76,7 +77,7 @@ final class MainHeader: UIView {
         addSubview(highTemperatureLabel)
         addSubview(lowTemperatureLabel)
         addConstraints()
-        
+        setupLocationManager()
     }
     
     required init?(coder: NSCoder) {
@@ -114,7 +115,10 @@ final class MainHeader: UIView {
     
     
     private func setupLocationManager() {
-        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.stopUpdatingLocation()
     }
     
     

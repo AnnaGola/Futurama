@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Our Album
+//  Weather
 //
-//  Created by anna on 19.05.2022.
+//  Created by anna on 26.06.2022.
 //
 
 import UIKit

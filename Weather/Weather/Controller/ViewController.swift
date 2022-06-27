@@ -12,7 +12,7 @@ final class ViewController: UIViewController {
 
     private let locationManager = CLLocationManager()
     private let networkService = FetchDataService()
-    private let weatherModel: Model? = nil
+    private var weatherModel: Model? = nil
     private var header: MainHeader?
     
     private let mainTableView: UITableView = {
@@ -56,12 +56,35 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.configure(with: weatherModel)
             }
             return cell
+            
         case .daily:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: DayCell.identifier, for: indexPath) as? DayCell else { return UITableViewCell() }
+            
+            if let weatherModel = weatherModel {
+                cell.configure(model: weatherModel)
+            }
+            let viewModel = cell.configureTableViewCellViewModelFor(indexPath.row)
+            cell.configure(with: viewModel)
+            return cell
             
         case .information:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: InformationTableViewCell.identifier, for: indexPath) as? InformationTableViewCell else { return UITableViewCell() }
+            
+            if let weatherModel = weatherModel {
+                cell.configure(model: weatherModel)
+            }
+            let viewModel = cell.configureTableViewCellViewModelFor(indexPath.row)
+            cell.configure(with: viewModel)
+            return cell
             
         case .description:
-            
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: DescriptionTableViewCell.identifier, for: indexPath) as? DescriptionTableViewCell else { return UITableViewCell() }
+            if let weathermodel = weatherModel {
+                cell.configure(model: weathermodel)
+            }
+            let viewModel = cell.configureTableViewCellViewModelFor(indexPath.row)
+            cell.configure(with: viewModel)
+            return cell
         }
   }
     

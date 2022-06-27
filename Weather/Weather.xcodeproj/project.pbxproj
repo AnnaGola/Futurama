@@ -22,6 +22,9 @@
 		AF168CE82868D51700B43E80 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CE72868D51700B43E80 /* UIImageView.swift */; };
 		AF168CEA2868D6C000B43E80 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CE92868D6C000B43E80 /* Data.swift */; };
 		AF168CEC2868D7D700B43E80 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CEB2868D7D700B43E80 /* String.swift */; };
+		AF168CEE2868D88800B43E80 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CED2868D88800B43E80 /* UIColor.swift */; };
+		AF168CF12868D8ED00B43E80 /* HourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CF02868D8ED00B43E80 /* HourCell.swift */; };
+		AF168CF52869015800B43E80 /* HourCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CF42869015800B43E80 /* HourCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		AF168CE72868D51700B43E80 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		AF168CE92868D6C000B43E80 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		AF168CEB2868D7D700B43E80 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		AF168CED2868D88800B43E80 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		AF168CF02868D8ED00B43E80 /* HourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourCell.swift; sourceTree = "<group>"; };
+		AF168CF42869015800B43E80 /* HourCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				AF168CD52868BE6F00B43E80 /* MainHeader.swift */,
+				AF168CEF2868D8D600B43E80 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +143,7 @@
 				AF168CE72868D51700B43E80 /* UIImageView.swift */,
 				AF168CE92868D6C000B43E80 /* Data.swift */,
 				AF168CEB2868D7D700B43E80 /* String.swift */,
+				AF168CED2868D88800B43E80 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -148,6 +156,15 @@
 				AF168CC82868BC5200B43E80 /* Info.plist */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		AF168CEF2868D8D600B43E80 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AF168CF02868D8ED00B43E80 /* HourCell.swift */,
+				AF168CF42869015800B43E80 /* HourCollection.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,13 +237,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF168CF12868D8ED00B43E80 /* HourCell.swift in Sources */,
 				AF168CE62868D44F00B43E80 /* UIView.swift in Sources */,
+				AF168CEE2868D88800B43E80 /* UIColor.swift in Sources */,
 				AF168CEC2868D7D700B43E80 /* String.swift in Sources */,
 				AF168CBF2868BC5000B43E80 /* ViewController.swift in Sources */,
 				AF168CDE2868C9E300B43E80 /* FetchData.swift in Sources */,
 				AF168CD62868BE6F00B43E80 /* MainHeader.swift in Sources */,
 				AF168CE22868CC5B00B43E80 /* APIManager.swift in Sources */,
 				AF168CDA2868C88100B43E80 /* WeatherAPI.swift in Sources */,
+				AF168CF52869015800B43E80 /* HourCollection.swift in Sources */,
 				AF168CE82868D51700B43E80 /* UIImageView.swift in Sources */,
 				AF168CEA2868D6C000B43E80 /* Data.swift in Sources */,
 				AF168CDC2868C90D00B43E80 /* Model.swift in Sources */,

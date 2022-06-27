@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct HourCollctionViewCell {
+struct HourCollectionViewCell {
     
     let tempLabelString: String?
     let timeLabelString: String?
@@ -17,9 +17,9 @@ struct HourCollctionViewCell {
 }
 
 
-final class HourlCollectionCell: UICollectionViewCell {
+final class HourCollectionCell: UICollectionViewCell {
     
-    static let identifier = "HourlCollectionCell"
+    static let identifier = "HourCollectionCell"
     
     private let temperatureLabel: UILabel = {
         let label = UILabel()
@@ -62,15 +62,6 @@ final class HourlCollectionCell: UICollectionViewCell {
         return imageView
     }()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        contentView.backgroundColor = .lightBlue
-        contentView.addSubview(temperatureLabel)
-        contentView.addSubview(timeLabel)
-        contentView.addSubview(humidityLabel)
-        contentView.addSubview(iconImageView)
-        
-    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -108,7 +99,7 @@ final class HourlCollectionCell: UICollectionViewCell {
         ])
     }
     
-    func configure(with viewModel: HourCollctionViewCell) {
+    func configure(with viewModel: HourCollectionViewCell) {
         if viewModel.tempLabelString == "Now" {
             timeLabel.text = "Now"
             timeLabel.font = UIFont.boldSystemFont(ofSize: 17)

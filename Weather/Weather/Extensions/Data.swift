@@ -5,24 +5,23 @@
 //  Created by anna on 26.06.2022.
 //
 
-import UIKit
+import Foundation
 
 
-extension Data {
-    
-    func dataTime() -> String {
+extension Date {
+    func getTimeForDate() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm"
         return formatter.string(from: self)
     }
     
-    func hourData() -> String {
+    func getHourForDate() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH"
         return formatter.string(from: self)
     }
     
-    func dayData() -> String {
+    func getDayForDate() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEEE"
         return formatter.string(from: self)

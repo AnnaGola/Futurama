@@ -137,7 +137,7 @@ extension MainHeader: CLLocationManagerDelegate {
                   let weather = weather,
                   let currentWeather = weather.current.weather.first,
                   let dailytWeather = weather.daily.first else { return }
-            
+//            
 //            self.locationNameLabel.text = weather.timezone.deletingPrefix()
 //            self.currentTempLabel.text = String(format: "%.f", weather.current.temp) + "°"
 //            self.descriptionLabel.text = currentWeather.descriptionWeather.firstCapitalized

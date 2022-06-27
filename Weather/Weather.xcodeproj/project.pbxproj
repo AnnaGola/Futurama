@@ -25,6 +25,7 @@
 		AF168CEE2868D88800B43E80 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CED2868D88800B43E80 /* UIColor.swift */; };
 		AF168CF12868D8ED00B43E80 /* HourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CF02868D8ED00B43E80 /* HourCell.swift */; };
 		AF168CF52869015800B43E80 /* HourCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CF42869015800B43E80 /* HourCollection.swift */; };
+		AF168CF72869A89600B43E80 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CF62869A89600B43E80 /* Enum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		AF168CED2868D88800B43E80 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		AF168CF02868D8ED00B43E80 /* HourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourCell.swift; sourceTree = "<group>"; };
 		AF168CF42869015800B43E80 /* HourCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourCollection.swift; sourceTree = "<group>"; };
+		AF168CF62869A89600B43E80 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				AF168CD92868C88100B43E80 /* WeatherAPI.swift */,
 				AF168CDB2868C90D00B43E80 /* Model.swift */,
+				AF168CF62869A89600B43E80 /* Enum.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				AF168CE82868D51700B43E80 /* UIImageView.swift in Sources */,
 				AF168CEA2868D6C000B43E80 /* Data.swift in Sources */,
 				AF168CDC2868C90D00B43E80 /* Model.swift in Sources */,
+				AF168CF72869A89600B43E80 /* Enum.swift in Sources */,
 				AF168CBB2868BC5000B43E80 /* AppDelegate.swift in Sources */,
 				AF168CE02868CB6800B43E80 /* FetchDataService.swift in Sources */,
 				AF168CBD2868BC5000B43E80 /* SceneDelegate.swift in Sources */,

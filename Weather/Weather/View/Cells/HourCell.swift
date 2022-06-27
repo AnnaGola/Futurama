@@ -29,7 +29,7 @@ final class HourCell: UITableViewCell, UICollectionViewDelegateFlowLayout {
         contentView.backgroundColor = .lightBlue
         selectionStyle = .none
         contentView.addSubview(collectionView)
-//WWW
+        setupCollectionView()
     }
     
     required init?(coder: NSCoder) {
@@ -48,6 +48,13 @@ final class HourCell: UITableViewCell, UICollectionViewDelegateFlowLayout {
         }
     }
     
+    private func setupCollectionView() {
+        collectionView.register(HourCollectionCell.self, forCellWithReuseIdentifier: HourCollectionCell.identifier)
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.showsHorizontalScrollIndicator = false
+    }
+    
     private func setupContentView() {
         
         collectionView.register(HourCell.self, forCellWithReuseIdentifier: HourCell.identifier)
@@ -56,14 +63,58 @@ final class HourCell: UITableViewCell, UICollectionViewDelegateFlowLayout {
         collectionView.showsHorizontalScrollIndicator = false
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
+    private func configureCollectioncell(_ index: Int) -> HourCollectionViewCell {
+        
+        var tempLabelstring: String?
+        var timeLabelstring: String?
+        var humidityLabelString: String?
+        var iconImageLabel: UIImage?
+        var urlStringForImage: String?
+        
+        if let weatherModel = weatherModel {
+            let hourlyModel = weatherModel.hourly[index]
+            let hourForDate = Date(timeIntervalSince1970: Double(hourlyModel.dt)).getHourForDate()
+            let nextHourForDate = Date(timeIntervalSince1970: Double(weatherModel.hourly[index + 1].dt)).getTimeForDate()
+            let timeForDate = Date(timeIntervalSince1970: Double(hourlyModel.dt)).getTimeForDate()
+            let sunset = Date(timeIntervalSince1970: Double(weatherModel.current.sunset)).getTimeForDate()
+            let sunrise = Date(timeIntervalSince1970: Double(weatherModel.current.sunrise)).getTimeForDate()
+            urlStringForImage = "http://openweathermap.org/img/wn/\(hourlyModel.weather[0].icon)@2x.png"
+            
+            if index == 0 {
+                timeLabelstring = "Now"
+                iconImageLabel = nil
+                tempLabelstring = String(format: "%.f", weatherModel.hourly[index].temp) + "º"
+            } else {
+                if sunset >= timeForDate && sunset < nextHourForDate {
+                    tempLabelstring = "Sunset"
+                    iconImageLabel = #imageLiteral(resourceName: "sunset")
+                    timeLabelstring = sunset
+                } else if sunrise >= timeForDate && sunrise < nextHourForDate {
+                    tempLabelstring = "Sunrise"
+                    iconImageLabel = #imageLiteral(resourceName: "sunrise")
+                    timeLabelstring = sunrise
+                } else {
+                    iconImageLabel = nil
+                    tempLabelstring = String(format: "%.f", weatherModel.hourly[index].temp) + "º"
+                    timeLabelstring = hourForDate
+                }
+            }
+            
+            if hourlyModel.humidity >= 30 {
+                humidityLabelString = String(hourlyModel.humidity) + " %"
+            } else {
+                humidityLabelString = ""
+            }
+        }
+        
+        return HourCollectionViewCell(
+            tempLabelString: tempLabelstring,
+            timeLabelString: timeLabelstring,
+            humidityLabelString: humidityLabelString,
+            iconImage: iconImageLabel,
+            urlString: urlStringForImage
+        )
+    }
 }
 
 extension HourCell: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -73,9 +124,11 @@ extension HourCell: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: <#T##String#>, for: indexPath) as! //NewVCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HourCollectionCell.identifier, for: indexPath) as! HourCollectionCell
         
-        
+        let viewModel = configureCollectioncell(indexPath.row)
+        cell.configure(with: viewModel)
+        cell.backgroundColor = .lightBlue
+        return cell
     }
-    
 }

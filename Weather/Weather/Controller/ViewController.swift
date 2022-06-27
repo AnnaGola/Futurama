@@ -82,7 +82,26 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension ViewController: CLLocationManagerDelegate {
     
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else { return }
+        locationManager.startUpdatingLocation()
+        let latitude = location.coordinate.latitude
+        let longitude = location.coordinate.longitude
+        
+        networkService.fetchWeatherData(latitude: latitude, longitude: longitude) { [weak self] weather in
+            guard let self = self, let weather = weather else { return }
+            
+            self.weatherModel = weather
+            
+            DispatchQueue.main.async {
+                self.mainTableView.reloadData()
+            }
+        }
+    }
     
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error.localizedDescription)
+    }
     
     
     

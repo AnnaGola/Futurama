@@ -26,6 +26,9 @@
 		AF168CF12868D8ED00B43E80 /* HourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CF02868D8ED00B43E80 /* HourCell.swift */; };
 		AF168CF52869015800B43E80 /* HourCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CF42869015800B43E80 /* HourCollection.swift */; };
 		AF168CF72869A89600B43E80 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CF62869A89600B43E80 /* Enum.swift */; };
+		AF168CF92869ADA400B43E80 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CF82869ADA400B43E80 /* DayCell.swift */; };
+		AF168CFB2869AF3C00B43E80 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CFA2869AF3C00B43E80 /* Description.swift */; };
+		AF168CFD2869AF8400B43E80 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF168CFC2869AF8400B43E80 /* Information.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		AF168CF02868D8ED00B43E80 /* HourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourCell.swift; sourceTree = "<group>"; };
 		AF168CF42869015800B43E80 /* HourCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourCollection.swift; sourceTree = "<group>"; };
 		AF168CF62869A89600B43E80 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		AF168CF82869ADA400B43E80 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		AF168CFA2869AF3C00B43E80 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
+		AF168CFC2869AF8400B43E80 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,9 @@
 			children = (
 				AF168CF02868D8ED00B43E80 /* HourCell.swift */,
 				AF168CF42869015800B43E80 /* HourCollection.swift */,
+				AF168CF82869ADA400B43E80 /* DayCell.swift */,
+				AF168CFA2869AF3C00B43E80 /* Description.swift */,
+				AF168CFC2869AF8400B43E80 /* Information.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -250,12 +259,15 @@
 				AF168CE22868CC5B00B43E80 /* APIManager.swift in Sources */,
 				AF168CDA2868C88100B43E80 /* WeatherAPI.swift in Sources */,
 				AF168CF52869015800B43E80 /* HourCollection.swift in Sources */,
+				AF168CF92869ADA400B43E80 /* DayCell.swift in Sources */,
 				AF168CE82868D51700B43E80 /* UIImageView.swift in Sources */,
 				AF168CEA2868D6C000B43E80 /* Data.swift in Sources */,
 				AF168CDC2868C90D00B43E80 /* Model.swift in Sources */,
 				AF168CF72869A89600B43E80 /* Enum.swift in Sources */,
 				AF168CBB2868BC5000B43E80 /* AppDelegate.swift in Sources */,
 				AF168CE02868CB6800B43E80 /* FetchDataService.swift in Sources */,
+				AF168CFB2869AF3C00B43E80 /* Description.swift in Sources */,
+				AF168CFD2869AF8400B43E80 /* Information.swift in Sources */,
 				AF168CBD2868BC5000B43E80 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

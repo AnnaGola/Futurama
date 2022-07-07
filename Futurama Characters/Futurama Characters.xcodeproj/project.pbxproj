@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		AFD1167B287757D700B38530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1167A287757D700B38530 /* AppDelegate.swift */; };
 		AFD1167D287757D700B38530 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1167C287757D700B38530 /* SceneDelegate.swift */; };
-		AFD1167F287757D700B38530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1167E287757D700B38530 /* ViewController.swift */; };
 		AFD11682287757D700B38530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD11680287757D700B38530 /* Main.storyboard */; };
 		AFD11684287757D800B38530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD11683287757D800B38530 /* Assets.xcassets */; };
 		AFD11687287757D800B38530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD11685287757D800B38530 /* LaunchScreen.storyboard */; };
+		AFD11696287759AE00B38530 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD11695287759AE00B38530 /* API.swift */; };
+		AFD1169828775A1100B38530 /* MainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1169728775A1100B38530 /* MainTVC.swift */; };
+		AFD1169A28775AE400B38530 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1169928775AE400B38530 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AFD11677287757D700B38530 /* Futurama Characters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Futurama Characters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD1167A287757D700B38530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFD1167C287757D700B38530 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AFD1167E287757D700B38530 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFD11681287757D700B38530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFD11683287757D800B38530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFD11686287757D800B38530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFD11688287757D800B38530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD11695287759AE00B38530 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		AFD1169728775A1100B38530 /* MainTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTVC.swift; sourceTree = "<group>"; };
+		AFD1169928775AE400B38530 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,65 @@
 		AFD11679287757D700B38530 /* Futurama Characters */ = {
 			isa = PBXGroup;
 			children = (
-				AFD1167A287757D700B38530 /* AppDelegate.swift */,
-				AFD1167C287757D700B38530 /* SceneDelegate.swift */,
-				AFD1167E287757D700B38530 /* ViewController.swift */,
-				AFD11680287757D700B38530 /* Main.storyboard */,
-				AFD11685287757D800B38530 /* LaunchScreen.storyboard */,
-				AFD11683287757D800B38530 /* Assets.xcassets */,
+				AFD1168F287758AA00B38530 /* Models */,
+				AFD11693287758C600B38530 /* Views */,
+				AFD1168E287758A200B38530 /* Screens */,
+				AFD11691287758B900B38530 /* Network */,
+				AFD11692287758BF00B38530 /* Extensions */,
+				AFD11690287758AF00B38530 /* Delegates */,
 				AFD11688287757D800B38530 /* Info.plist */,
 			);
 			path = "Futurama Characters";
+			sourceTree = "<group>";
+		};
+		AFD1168E287758A200B38530 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AFD1169728775A1100B38530 /* MainTVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AFD1168F287758AA00B38530 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AFD11690287758AF00B38530 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AFD1167A287757D700B38530 /* AppDelegate.swift */,
+				AFD1167C287757D700B38530 /* SceneDelegate.swift */,
+				AFD11683287757D800B38530 /* Assets.xcassets */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		AFD11691287758B900B38530 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AFD11695287759AE00B38530 /* API.swift */,
+				AFD1169928775AE400B38530 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AFD11692287758BF00B38530 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AFD11693287758C600B38530 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFD11680287757D700B38530 /* Main.storyboard */,
+				AFD11685287757D800B38530 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFD1167F287757D700B38530 /* ViewController.swift in Sources */,
 				AFD1167B287757D700B38530 /* AppDelegate.swift in Sources */,
+				AFD11696287759AE00B38530 /* API.swift in Sources */,
+				AFD1169A28775AE400B38530 /* NetworkManager.swift in Sources */,
+				AFD1169828775A1100B38530 /* MainTVC.swift in Sources */,
 				AFD1167D287757D700B38530 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

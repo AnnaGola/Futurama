@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bHP-kh-bu6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Biy-6h-hGt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -104,7 +104,7 @@
                                             <outlet property="nameOfCharacter" destination="0EK-v1-n4E" id="nPO-3a-AfR"/>
                                             <outlet property="speciesOfCharacter" destination="yzu-80-mhi" id="6hm-gz-IZX"/>
                                             <outlet property="statusOfTheCharacterAsProfession" destination="L4W-Cz-ly8" id="y3x-bN-2mY"/>
-                                            <segue destination="gsr-pO-Atl" kind="show" identifier="ShowDetail" id="tW5-pd-qfm"/>
+                                            <segue destination="gsr-pO-Atl" kind="presentation" identifier="ShowDetail" id="432-dh-S4T"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -121,12 +121,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Characters" id="WL8-Cb-uGL"/>
                     <connections>
-                        <outlet property="tableView" destination="KUr-8S-aHs" id="1Jm-qr-Mg8"/>
+                        <outlet property="tableView" destination="KUr-8S-aHs" id="r4Y-tj-76l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OaJ-xG-aV1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="63.616071428571423"/>
+            <point key="canvasLocation" x="1839.1304347826087" y="63.616071428571423"/>
         </scene>
         <!--CharacterVC-->
         <scene sceneID="hIe-9r-9iI">
@@ -268,7 +268,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pq1-0m-Q8A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741" y="64"/>
+            <point key="canvasLocation" x="2650.7246376811595" y="63.616071428571423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UXr-kF-dm0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Biy-6h-hGt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BTp-ig-u1P">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bHP-kh-bu6" kind="relationship" relationship="rootViewController" id="W1p-SB-Ord"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GLK-ln-ieo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="63.616071428571423"/>
         </scene>
     </scenes>
     <resources>

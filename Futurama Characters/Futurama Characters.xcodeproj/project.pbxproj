@@ -16,6 +16,8 @@
 		AFD1169828775A1100B38530 /* MainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1169728775A1100B38530 /* MainTVC.swift */; };
 		AFD1169A28775AE400B38530 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1169928775AE400B38530 /* NetworkManager.swift */; };
 		AFD1169E28775CA500B38530 /* Network Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1169D28775CA500B38530 /* Network Extension.swift */; };
+		AFD116A028775E8800B38530 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1169F28775E8800B38530 /* ViewModel.swift */; };
+		AFD116A228775EB200B38530 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD116A128775EB200B38530 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		AFD1169728775A1100B38530 /* MainTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTVC.swift; sourceTree = "<group>"; };
 		AFD1169928775AE400B38530 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AFD1169D28775CA500B38530 /* Network Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Extension.swift"; sourceTree = "<group>"; };
+		AFD1169F28775E8800B38530 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AFD116A128775EB200B38530 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 		AFD1168F287758AA00B38530 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AFD1169F28775E8800B38530 /* ViewModel.swift */,
+				AFD116A128775EB200B38530 /* Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +207,8 @@
 				AFD1169828775A1100B38530 /* MainTVC.swift in Sources */,
 				AFD1167D287757D700B38530 /* SceneDelegate.swift in Sources */,
 				AFD1169E28775CA500B38530 /* Network Extension.swift in Sources */,
+				AFD116A028775E8800B38530 /* ViewModel.swift in Sources */,
+				AFD116A228775EB200B38530 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

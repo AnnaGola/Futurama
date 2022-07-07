@@ -13,7 +13,7 @@ final class MainHeader: UIView {
 
     let locationManager = CLLocationManager()
     let networkService = FetchDataService()
-    //let weatherModel: Model?
+    var weatherModel: Model?
     
     private let locationNameLabel: UILabel = {
         let label = UILabel()
@@ -137,13 +137,13 @@ extension MainHeader: CLLocationManagerDelegate {
                   let weather = weather,
                   let currentWeather = weather.current.weather.first,
                   let dailytWeather = weather.daily.first else { return }
-//            
-//            self.locationNameLabel.text = weather.timezone.deletingPrefix()
-//            self.currentTempLabel.text = String(format: "%.f", weather.current.temp) + "°"
-//            self.descriptionLabel.text = currentWeather.descriptionWeather.firstCapitalized
-//            self.lowTempLabel.text = "Min: " + String(format: "%.f", dailytWeather.temp.min) + "°"
-//            self.highTempLabel.text = "Max: " + String(format: "%.f", dailytWeather.temp.max) + "°"
-//            self.weatherModel = weather
+            
+            self.locationNameLabel.text = weather.timezone.deletPrefix()
+            self.currentTemperatureLabel.text = String(format: "%.f", weather.current.temp) + "°"
+            self.descriptionlabel.text = currentWeather.description.firstCapitalized
+            self.lowTemperatureLabel.text = "Min: " + String(format: "%.f", dailytWeather.temp.min) + "°"
+            self.highTemperatureLabel.text = "Max: " + String(format: "%.f", dailytWeather.temp.max) + "°"
+            self.weatherModel = weather
         }
     }
     

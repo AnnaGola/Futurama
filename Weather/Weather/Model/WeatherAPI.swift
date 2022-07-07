@@ -13,3 +13,4 @@ struct WeatherAPI {
     static let path = "/data/2.5"
     static let key = "7897c18be4bf89ea24dcbde366adf392"
 }
+

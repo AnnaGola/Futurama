@@ -25,6 +25,38 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .lightBlue
+        setupTableView()
+        setupLocationManager()
+        setupTableViewHeader()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        mainTableView.frame = view.bounds
+    }
+
+
+private func setupTableView() {
+    view.addSubview(mainTableView)
+    mainTableView.delegate = self
+    mainTableView.dataSource = self
+    mainTableView.register(HourCell.self, forCellReuseIdentifier: HourCell.identifier)
+    mainTableView.register(DayCell.self, forCellReuseIdentifier: DayCell.identifier)
+    mainTableView.register(InformationTableViewCell.self, forCellReuseIdentifier: InformationTableViewCell.identifier)
+    mainTableView.register(DescriptionTableViewCell.self, forCellReuseIdentifier: DescriptionTableViewCell.identifier)
+ }
+    
+    private func setupTableViewHeader() {
+        
+        header = MainHeader(frame: CGRect(x: 0, y: 0, width: view.width, height: view.height))
+        mainTableView.tableHeaderView = header
+    }
+    
+    private func setupLocationManager() {
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
     }
 }
 
@@ -102,6 +134,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
 }
+
+
 
 extension ViewController: CLLocationManagerDelegate {
     

@@ -8,5 +8,5 @@
 import UIKit
 
 extension UIColor {
-    static let lightBlue = UIColor(named: "lightBlue")
+    static let lightBlue = UIColor(named: "lightBlue") ?? UIColor()
 }

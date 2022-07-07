@@ -14,6 +14,7 @@ public struct CharacterModel: Codable {
     public let profession: String
     public let status: Status
     public let picURL: String
+    public let name: String
 
     enum CodingKeys: String, CodingKey {
         case species = "Species"
@@ -22,6 +23,7 @@ public struct CharacterModel: Codable {
         case profession = "Profession"
         case status = "Status"
         case picURL = "PicUrl"
+        case name = "Name"
     }
 }
 

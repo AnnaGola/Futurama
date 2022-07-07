@@ -18,6 +18,8 @@
 		AFD1169E28775CA500B38530 /* Network Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1169D28775CA500B38530 /* Network Extension.swift */; };
 		AFD116A028775E8800B38530 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1169F28775E8800B38530 /* ViewModel.swift */; };
 		AFD116A228775EB200B38530 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD116A128775EB200B38530 /* Model.swift */; };
+		AFD116A428775FF800B38530 /* CharacterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD116A328775FF800B38530 /* CharacterVC.swift */; };
+		AFD116A62877601F00B38530 /* MainCharactersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD116A52877601F00B38530 /* MainCharactersCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		AFD1169D28775CA500B38530 /* Network Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Extension.swift"; sourceTree = "<group>"; };
 		AFD1169F28775E8800B38530 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		AFD116A128775EB200B38530 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AFD116A328775FF800B38530 /* CharacterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterVC.swift; sourceTree = "<group>"; };
+		AFD116A52877601F00B38530 /* MainCharactersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCharactersCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				AFD1169728775A1100B38530 /* MainTVC.swift */,
+				AFD116A328775FF800B38530 /* CharacterVC.swift */,
+				AFD116A52877601F00B38530 /* MainCharactersCell.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -208,6 +214,8 @@
 				AFD1167D287757D700B38530 /* SceneDelegate.swift in Sources */,
 				AFD1169E28775CA500B38530 /* Network Extension.swift in Sources */,
 				AFD116A028775E8800B38530 /* ViewModel.swift in Sources */,
+				AFD116A428775FF800B38530 /* CharacterVC.swift in Sources */,
+				AFD116A62877601F00B38530 /* MainCharactersCell.swift in Sources */,
 				AFD116A228775EB200B38530 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

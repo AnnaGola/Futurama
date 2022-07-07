@@ -100,9 +100,11 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="CellView" destination="z7J-2x-c0n" id="E8I-WR-Usf"/>
-                                            <outlet property="imageOfCharacter" destination="Vso-ww-T3O" id="Oh6-W3-4ac"/>
-                                            <outlet property="nameOfCharacter" destination="0EK-v1-n4E" id="nPO-3a-AfR"/>
-                                            <outlet property="speciesOfCharacter" destination="yzu-80-mhi" id="6hm-gz-IZX"/>
+                                            <outlet property="cellView" destination="z7J-2x-c0n" id="tLz-sA-SbK"/>
+                                            <outlet property="imageOfCharacter" destination="Vso-ww-T3O" id="nfL-5z-jOy"/>
+                                            <outlet property="nameOfCharacter" destination="0EK-v1-n4E" id="Tpj-Mw-yFN"/>
+                                            <outlet property="professionOfCharacter" destination="L4W-Cz-ly8" id="KXg-Y4-NvS"/>
+                                            <outlet property="speciesOfCharacter" destination="yzu-80-mhi" id="Ghw-Ar-ibV"/>
                                             <outlet property="statusOfTheCharacterAsProfession" destination="L4W-Cz-ly8" id="y3x-bN-2mY"/>
                                             <segue destination="gsr-pO-Atl" kind="presentation" identifier="ShowDetail" id="432-dh-S4T"/>
                                         </connections>

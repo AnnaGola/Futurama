@@ -21,8 +21,12 @@ final class CharacterService {
                 let characterResponse = try decoder.decode(CharacterResponse.self, from: data)
                 let viewModel = ViewModel()
                 viewModel.characters = characterResponse.results
+                
+                DispatchQueue.main.async {
+                    complition(viewModel)
+                }
             } catch {
-                print(error.localizedDescription)
+                print(error)
             }
         }.resume()
     }

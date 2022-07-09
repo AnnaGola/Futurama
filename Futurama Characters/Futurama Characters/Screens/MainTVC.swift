@@ -11,8 +11,6 @@ class MainTVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
-    private var charactersList = [CharacterModel]()
-    
     var viewModel: ViewModel?
     var characterService = CharacterService()
     

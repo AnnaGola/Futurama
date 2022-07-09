@@ -11,7 +11,7 @@
         <!--Characters-->
         <scene sceneID="nWz-Fa-Ndl">
             <objects>
-                <viewController id="bHP-kh-bu6" customClass="MainTVC" customModule="Futurama" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bHP-kh-bu6" customClass="MainTVC" customModule="Futurama_Characters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h1W-Mt-wMV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="123" id="PD7-Um-EZw" customClass="MainCharactersCell" customModule="Futurama" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="123" id="PD7-Um-EZw" customClass="MainCharactersCell" customModule="Futurama_Characters" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="123"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PD7-Um-EZw" id="U3i-Sd-0Pc">
@@ -99,13 +99,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="CellView" destination="z7J-2x-c0n" id="E8I-WR-Usf"/>
                                             <outlet property="cellView" destination="z7J-2x-c0n" id="tLz-sA-SbK"/>
                                             <outlet property="imageOfCharacter" destination="Vso-ww-T3O" id="nfL-5z-jOy"/>
                                             <outlet property="nameOfCharacter" destination="0EK-v1-n4E" id="Tpj-Mw-yFN"/>
                                             <outlet property="professionOfCharacter" destination="L4W-Cz-ly8" id="KXg-Y4-NvS"/>
                                             <outlet property="speciesOfCharacter" destination="yzu-80-mhi" id="Ghw-Ar-ibV"/>
-                                            <outlet property="statusOfTheCharacterAsProfession" destination="L4W-Cz-ly8" id="y3x-bN-2mY"/>
                                             <segue destination="gsr-pO-Atl" kind="presentation" identifier="ShowDetail" id="432-dh-S4T"/>
                                         </connections>
                                     </tableViewCell>
@@ -133,7 +131,7 @@
         <!--CharacterVC-->
         <scene sceneID="hIe-9r-9iI">
             <objects>
-                <viewController id="gsr-pO-Atl" customClass="CharacterVC" customModule="Futurama" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gsr-pO-Atl" customClass="CharacterVC" customModule="Futurama_Characters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pie-IK-YZL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,20 +257,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="6Yv-RB-ftc"/>
                     <connections>
-                        <outlet property="PlanetOfCharacter" destination="Wth-Sx-Mun" id="7aC-fh-agc"/>
-                        <outlet property="ProfessionOfCharacter" destination="JhU-G2-gTG" id="keU-2m-vMR"/>
                         <outlet property="ageLabel" destination="n0W-zS-wbc" id="ehM-Hr-1Pl"/>
-                        <outlet property="ageOfCharacter" destination="n0W-zS-wbc" id="zig-Gz-9Vp"/>
                         <outlet property="image" destination="7LY-gv-0aq" id="Za6-61-lOq"/>
-                        <outlet property="imageOfCharacter" destination="7LY-gv-0aq" id="ieH-3J-SBq"/>
                         <outlet property="nameLabel" destination="y7S-gx-nKc" id="H5l-GB-igq"/>
-                        <outlet property="nameOfCharacter" destination="y7S-gx-nKc" id="j6Y-bY-pME"/>
                         <outlet property="planetLabel" destination="Wth-Sx-Mun" id="iBo-jI-ynQ"/>
                         <outlet property="professionLabel" destination="JhU-G2-gTG" id="cCt-ke-Z5a"/>
                         <outlet property="speciesLabel" destination="jY1-u1-v6n" id="1hz-mI-lq2"/>
-                        <outlet property="speciesOfCharacter" destination="jY1-u1-v6n" id="QsJ-1B-3rT"/>
                         <outlet property="statusLabel" destination="0e5-UJ-gRV" id="oeq-oN-uS1"/>
-                        <outlet property="statusOfCharacter" destination="0e5-UJ-gRV" id="I1E-1m-L28"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pq1-0m-Q8A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

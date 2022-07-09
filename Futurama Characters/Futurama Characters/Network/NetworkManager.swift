@@ -12,7 +12,7 @@ public enum Result<Data> {
     case success(Data)
 }
 
-final class NetworkManager {
+final class NetworkManager: NSObject {
     
     private static func getData(url: URL, complition: @escaping (Data?, URLResponse?, Error?) -> ()) {
         

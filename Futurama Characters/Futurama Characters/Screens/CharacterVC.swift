@@ -16,26 +16,21 @@ class CharacterVC: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var professionLabel: UILabel!
     @IBOutlet weak var planetLabel: UILabel!
-    
-    var characterDetails: CharacterModel?
+
     var details: CharacterModel?
-    var location = [CharacterModel]()
+    var characterDetails: CharacterModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        details = characterDetails
-        
         nameLabel.text = details?.name
-        speciesLabel.text = details?.species.rawValue
+        speciesLabel.text = String(describing: details?.species)
         ageLabel.text = details?.age
-        statusLabel.text = details?.status.rawValue
+        statusLabel.text = String(describing: details?.status)
         professionLabel.text = details?.profession
-        planetLabel.text = details?.planet.rawValue
+        planetLabel.text = String(describing: details?.planet)
         
         self.image.layer.cornerRadius = 15
         self.image.loadThumbnail(stringURL: details!.picURL)
     }
-   
-
 }

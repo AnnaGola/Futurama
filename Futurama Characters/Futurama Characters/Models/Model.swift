@@ -7,20 +7,22 @@
 
 import Foundation
 
-struct CharacterResponse: Codable {
+struct CharacterResponse: Decodable {
     let results: [CharacterModel]
 }
 
-struct CharacterModel: Codable {
-    let species: Species
-    let age: String
-    let planet: Planet
-    let profession: String
-    let status: Status
-    let picURL: String
-    let name: String
+public struct CharacterModel: Decodable, Identifiable {
+    public var id: Int
+    public let species: Species
+    public let age: String
+    public let planet: Planet
+    public let profession: String
+    public let status: Status
+    public let picURL: String
+    public let name: String
     
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
+        case id = "id"
         case species = "Species"
         case age = "Age"
         case planet = "Planet"
@@ -30,19 +32,19 @@ struct CharacterModel: Codable {
         case name = "Name"
     }
     
-    enum Planet: String, Codable {
+    public enum Planet: String, Decodable {
         case earth = "Earth"
         case unknown = "Unknown"
     }
     
-    enum Species: String, Codable {
+    public enum Species: String, Decodable {
         case formerlyHumanCurrentlyHeadInJarPossibly = "Formerly: HumanCurrently: Head in Jar (possibly)"
         case human = "Human"
         case humanClone = "Human/Clone"
         case unknown = "Unknown"
     }
     
-    enum Status: String, Codable {
+    public enum Status: String, Decodable {
         case alive = "Alive"
         case aliveLivesInUniverseGamma = "Alive (lives in Universe Gamma)"
         case deceased = "Deceased"

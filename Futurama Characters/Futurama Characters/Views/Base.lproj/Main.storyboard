@@ -261,10 +261,17 @@
                     <connections>
                         <outlet property="PlanetOfCharacter" destination="Wth-Sx-Mun" id="7aC-fh-agc"/>
                         <outlet property="ProfessionOfCharacter" destination="JhU-G2-gTG" id="keU-2m-vMR"/>
+                        <outlet property="ageLabel" destination="n0W-zS-wbc" id="ehM-Hr-1Pl"/>
                         <outlet property="ageOfCharacter" destination="n0W-zS-wbc" id="zig-Gz-9Vp"/>
+                        <outlet property="image" destination="7LY-gv-0aq" id="Za6-61-lOq"/>
                         <outlet property="imageOfCharacter" destination="7LY-gv-0aq" id="ieH-3J-SBq"/>
+                        <outlet property="nameLabel" destination="y7S-gx-nKc" id="H5l-GB-igq"/>
                         <outlet property="nameOfCharacter" destination="y7S-gx-nKc" id="j6Y-bY-pME"/>
+                        <outlet property="planetLabel" destination="Wth-Sx-Mun" id="iBo-jI-ynQ"/>
+                        <outlet property="professionLabel" destination="JhU-G2-gTG" id="cCt-ke-Z5a"/>
+                        <outlet property="speciesLabel" destination="jY1-u1-v6n" id="1hz-mI-lq2"/>
                         <outlet property="speciesOfCharacter" destination="jY1-u1-v6n" id="QsJ-1B-3rT"/>
+                        <outlet property="statusLabel" destination="0e5-UJ-gRV" id="oeq-oN-uS1"/>
                         <outlet property="statusOfCharacter" destination="0e5-UJ-gRV" id="I1E-1m-L28"/>
                     </connections>
                 </viewController>

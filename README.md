@@ -20,5 +20,7 @@
 
 ## Второй экран
 На нем отображается большая чать данных из API, экран можно смахнуть вниз, чтобы перейти на Главный экран 
+
 <img src="https://github.com/AnnaGola/Futurama/blob/main/Screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-07-11%20at%2014.45.56.png" width="160">.
 <img src="https://github.com/AnnaGola/Futurama/blob/main/Screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-07-11%20at%2014.45.37.png" width="160">
+

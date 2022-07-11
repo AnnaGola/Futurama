@@ -53,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF75A457287C45AB002FABF7 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				AFD11683287757D800B38530 /* Assets.xcassets */,
+				AFD11688287757D800B38530 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		AFD1166E287757D700B38530 = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +87,7 @@
 				AFD11691287758B900B38530 /* Network */,
 				AFD11692287758BF00B38530 /* Extensions */,
 				AFD11690287758AF00B38530 /* Delegates */,
-				AFD11688287757D800B38530 /* Info.plist */,
+				AF75A457287C45AB002FABF7 /* Supporting files */,
 			);
 			path = "Futurama Characters";
 			sourceTree = "<group>";
@@ -107,7 +116,6 @@
 			children = (
 				AFD1167A287757D700B38530 /* AppDelegate.swift */,
 				AFD1167C287757D700B38530 /* SceneDelegate.swift */,
-				AFD11683287757D800B38530 /* Assets.xcassets */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -369,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 36FB83P3NL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Futurama Characters/Info.plist";
+				INFOPLIST_FILE = "Futurama Characters/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -397,7 +405,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 36FB83P3NL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Futurama Characters/Info.plist";
+				INFOPLIST_FILE = "Futurama Characters/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

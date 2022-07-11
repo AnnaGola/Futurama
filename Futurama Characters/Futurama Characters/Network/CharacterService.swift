@@ -19,7 +19,6 @@ final class CharacterService {
             do {
                 let decoder = JSONDecoder()
                 let characters = try decoder.decode([CharacterModel].self, from: data)
-                print(characters)
                 let viewModel = ViewModel()
 
                 viewModel.characters = characters

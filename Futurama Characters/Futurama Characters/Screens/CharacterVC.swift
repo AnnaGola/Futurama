@@ -23,12 +23,14 @@ class CharacterVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        nameLabel.text = details?.name
-        speciesLabel.text = String(describing: details?.species)
-        ageLabel.text = details?.age
-        statusLabel.text = String(describing: details?.status)
-        professionLabel.text = details?.profession
-        planetLabel.text = String(describing: details?.planet)
+        details = characterDetails
+        
+        nameLabel.text = details!.name
+        speciesLabel.text = String(describing: details!.species)
+        ageLabel.text = details!.age
+        statusLabel.text = String(describing: details!.status)
+        professionLabel.text = details!.profession
+        planetLabel.text = String(describing: details!.planet)
         
         self.image.layer.cornerRadius = 15
         self.image.loadThumbnail(stringURL: details!.picURL)

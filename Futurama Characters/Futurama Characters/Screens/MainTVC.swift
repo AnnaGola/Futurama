@@ -13,6 +13,8 @@ class MainTVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var viewModel: ViewModel?
     var characterService = CharacterService()
+    let navigationBar = UINavigationItem()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

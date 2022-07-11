@@ -16,7 +16,7 @@ class CharacterVC: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var professionLabel: UILabel!
     @IBOutlet weak var planetLabel: UILabel!
-
+    
     var details: CharacterModel?
     var characterDetails: CharacterModel?
     
@@ -25,14 +25,16 @@ class CharacterVC: UIViewController {
 
         details = characterDetails
         
-        nameLabel.text = details!.name
-        speciesLabel.text = String(describing: details!.species)
-        ageLabel.text = details!.age
-        statusLabel.text = String(describing: details!.status)
-        professionLabel.text = details!.profession
-        planetLabel.text = String(describing: details!.planet)
+        guard let details = details else { return }
+        
+        nameLabel.text = details.name
+        speciesLabel.text = String(describing: details.species)
+        ageLabel.text = details.age
+        statusLabel.text = String(describing: details.status)
+        professionLabel.text = details.profession
+        planetLabel.text = String(describing: details.planet)
         
         self.image.layer.cornerRadius = 15
-        self.image.loadThumbnail(stringURL: details!.picURL)
+        self.image.loadThumbnail(stringURL: details.picURL)
     }
 }

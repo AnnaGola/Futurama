@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+ 
 final class ViewModel {
     
     var characters: [CharacterModel] = []

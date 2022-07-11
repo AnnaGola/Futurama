@@ -18,15 +18,17 @@ final class CharacterService {
             
             do {
                 let decoder = JSONDecoder()
-                let characterResponse = try decoder.decode(CharacterResponse.self, from: data)
+                let characters = try decoder.decode([CharacterModel].self, from: data)
+                print(characters)
                 let viewModel = ViewModel()
-                viewModel.characters = characterResponse.results
+
+                viewModel.characters = characters
                 
                 DispatchQueue.main.async {
                     complition(viewModel)
                 }
             } catch {
-                print(error)
+                print(error.localizedDescription)
             }
         }.resume()
     }
